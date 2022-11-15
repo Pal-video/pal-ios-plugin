@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'pal2_Example' do
+  pod 'pal2', :path => '../'
+
+  target 'pal2_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
