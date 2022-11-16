@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
     
-    PalPlugin.sharedInstance.setup(apiToken: "TEST")
+    PalPlugin.sharedInstance.setup(apiToken: "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJodHRwczovL2V4YW1wbGUuY29tL2lzc3VlciIsInVwbiI6IjQ4YzA4Mjk1LTdhNGEtNGE1Mi1hZDY0LWU5ZGYzYzU0ZDcyMUBwYWwuaW8iLCJzdWIiOiI0OGMwODI5NS03YTRhLTRhNTItYWQ2NC1lOWRmM2M1NGQ3MjEiLCJpYXQiOjE2NTkxMDI1MTcsImdyb3VwcyI6WyJQcm9qZWN0Il0sImVudiI6IkRFVkVMT1BNRU5UIiwiZXhwIjoxMDI5OTEwMjUxNywianRpIjoiOGI5MmQ3ODQtYjIwNC00OGNmLTk5MzktYmMzODY4OWU0ZDAxIn0.FlgtpgUm0GLklmwJ60QdX25wOmgIiNQadcAY5Yj209W0bv2JLCsHHrDwR-C4LG6n4ZsQOV0K8VXWkVJLJE_kjAyBTcbYssdpz0oJqnVMzuVy_AW0w87VM915LpmPSpyAVW5CVARyktRfIS-rVQ7_bz0l0BBkJUAreXbwQoUGSonkWeDFz1FD4AE82AwBu8WZ1K3_CLoI3-BRNyq1o4rFz8RaMGfOt2FhPdP0nTZ8HvujZxJZ0h0_PmsAanixTlIPAwfFPYndc__Xylj5Ah8MG9xU_m9_XqhMcMGKIKcQ4OcVbO66akEzJXugtUwl7wAazbyG0JLcpkgM1lV4fTiOuw", serverUrl: "https://stagingback.pal.video")
     
     return true
   }

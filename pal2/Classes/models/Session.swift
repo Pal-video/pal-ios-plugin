@@ -7,20 +7,20 @@
 
 import Foundation
 
-class PalSession {
-  private var uid: String
-  
-  public init(uid: String) {
-    self.uid = uid
-  }
+struct PalSession: Codable {
+  let uid: String
 }
 
-class PalSessionRequest {
+class PalSessionRequest: Codable {
   private var frameworkType: String
   private var platform: String
   
-  public init(frameworkType: String, platform: String) {
-    self.frameworkType = frameworkType
-    self.platform = platform
+  public init() {
+    self.frameworkType = "SWIFT"
+    self.platform = "iOS" // TODO: add dynamic macos, ios, ...
+  }
+  
+  public func toMap() -> [String: Any] {
+    return ["platform": self.platform, "frameworkType": self.frameworkType]
   }
 }

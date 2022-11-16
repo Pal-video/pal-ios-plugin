@@ -6,15 +6,16 @@
 //
 
 import Foundation
-import AFNetworking
 
 public class PalPlugin {
   public static let sharedInstance = PalPlugin()
+  
+  // Http
   private var apiToken: String?
-  private var serverUrl: String = "https://back.pal.video"
+  lazy private var serverUrl: String = "https://back.pal.video"
   
+  // Apis
   private var sessionApi: SessionApi?
-  
   
   public init() {}
   
@@ -24,16 +25,16 @@ public class PalPlugin {
       self.serverUrl = serverUrl!
     }
     
-    let manager = AFHTTPSessionManager(baseURL: URL(string: self.serverUrl))
-    manager.requestSerializer = AFJSONRequestSerializer()
-    manager.responseSerializer = AFJSONResponseSerializer()
+    let httpClient = HttpClient(baseUrl: self.serverUrl, apiToken: self.apiToken!)
     
+    // initialize all apis
     self.sessionApi = SessionApi(
-      manager: manager, apiToken: self.apiToken!
+      httpClient: httpClient
     )
+    self.sessionApi!.initSession()
   }
   
-  public func logCurrentScreen(route: String) throws {
+  public func logCurrentScreen(route: String) {
     if (self.sessionApi == nil) {
       // TODO: throw error
       
