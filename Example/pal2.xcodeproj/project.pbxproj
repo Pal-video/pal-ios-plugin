@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		279623CA2923F8A5000B11E2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279623C92923F8A5000B11E2 /* SecondViewController.swift */; };
 		4268AA7999E1A56E989E636D /* Pods_pal2_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB222ACE4D9F5C5E7C0717B /* Pods_pal2_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -30,9 +31,10 @@
 /* Begin PBXFileReference section */
 		073FAE4EBE583B92AA0D63B6 /* Pods_pal2_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pal2_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AB222ACE4D9F5C5E7C0717B /* Pods_pal2_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pal2_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		279623C92923F8A5000B11E2 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		2A2717D6C71EC72C1709871A /* Pods-pal2_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pal2_Tests.release.xcconfig"; path = "Target Support Files/Pods-pal2_Tests/Pods-pal2_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		2CD82F7D4ECF71968A64F33C /* Pods-pal2_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pal2_Example.debug.xcconfig"; path = "Target Support Files/Pods-pal2_Example/Pods-pal2_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		38BD479D0AA0DF9A20F1E6D4 /* pal2.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = pal2.podspec; path = ../pal2.podspec; sourceTree = "<group>"; };
+		38BD479D0AA0DF9A20F1E6D4 /* pal2.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = pal2.podspec; path = ../pal2.podspec; sourceTree = "<group>"; };
 		40422C37D6A7643819CDB543 /* Pods-pal2_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pal2_Example.release.xcconfig"; path = "Target Support Files/Pods-pal2_Example/Pods-pal2_Example.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* pal2_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pal2_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,8 +46,8 @@
 		607FACE51AFB9204008FA782 /* pal2_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pal2_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		AC88FC2A603C40AA8EBE9E5C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		E808CA9CFDB855244236C072 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		AC88FC2A603C40AA8EBE9E5C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		E808CA9CFDB855244236C072 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		EA34EEA02B23E81900F8179E /* Pods-pal2_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pal2_Tests.debug.xcconfig"; path = "Target Support Files/Pods-pal2_Tests/Pods-pal2_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,7 +79,6 @@
 				EA34EEA02B23E81900F8179E /* Pods-pal2_Tests.debug.xcconfig */,
 				2A2717D6C71EC72C1709871A /* Pods-pal2_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -107,6 +108,7 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				279623C92923F8A5000B11E2 /* SecondViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -171,7 +173,7 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				452AAD224B3B482BFDFA3061 /* [CP] Embed Pods Frameworks */,
+				1B187268C8112102972D1523 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -213,10 +215,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = Q8N2T428YG;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = Q8N2T428YG;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -227,6 +231,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -262,7 +267,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		452AAD224B3B482BFDFA3061 /* [CP] Embed Pods Frameworks */ = {
+		1B187268C8112102972D1523 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -331,6 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				279623CA2923F8A5000B11E2 /* SecondViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
@@ -478,7 +484,9 @@
 			baseConfigurationReference = 2CD82F7D4ECF71968A64F33C /* Pods-pal2_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Q8N2T428YG;
 				INFOPLIST_FILE = pal2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -493,7 +501,9 @@
 			baseConfigurationReference = 40422C37D6A7643819CDB543 /* Pods-pal2_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Q8N2T428YG;
 				INFOPLIST_FILE = pal2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -507,6 +517,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EA34EEA02B23E81900F8179E /* Pods-pal2_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = Q8N2T428YG;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -516,6 +527,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -529,11 +541,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2A2717D6C71EC72C1709871A /* Pods-pal2_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = Q8N2T428YG;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";

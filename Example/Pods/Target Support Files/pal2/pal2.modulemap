@@ -1,0 +1,6 @@
+framework module pal2 {
+  umbrella header "pal2-umbrella.h"
+
+  export *
+  module * { export * }
+}
