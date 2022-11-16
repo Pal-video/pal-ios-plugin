@@ -1,15 +1,22 @@
 PODS:
-  - pal2 (0.1.0)
+  - Alamofire (5.6.2)
+  - pal2 (0.1.0):
+    - Alamofire
 
 DEPENDENCIES:
   - pal2 (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
 
 EXTERNAL SOURCES:
   pal2:
     :path: "../"
 
 SPEC CHECKSUMS:
-  pal2: f287b122353a4903e61e986a96d3307963b32915
+  Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
+  pal2: 6a2adfce71d09b3005a0301a5dd905cfb1cbc647
 
 PODFILE CHECKSUM: 4f9467e593f31b3236330eb7813d277eadd31359
 

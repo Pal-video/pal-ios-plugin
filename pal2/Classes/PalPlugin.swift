@@ -6,10 +6,11 @@
 //
 
 import Foundation
+import Alamofire
 
 public class PalPlugin {
   public static let sharedInstance = PalPlugin()
-  private var apiToken: String?;
+  private var apiToken: String?
   
   public init() {}
   
