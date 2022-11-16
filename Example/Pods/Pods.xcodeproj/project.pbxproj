@@ -18,6 +18,7 @@
 		266BF194C5870E5A51A7EDE4F425DBE8 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0851793391EED15DA880B71B43C3D26 /* Session.swift */; };
 		27210775DC19F106177A4FE60434063B /* EventApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40EBBBA729BF777FE34EE0C786B71AD /* EventApi.swift */; };
 		279623E2292525E6000B11E2 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279623E1292525E5000B11E2 /* HttpClient.swift */; };
+		279623E429253B60000B11E2 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279623E329253B60000B11E2 /* Event.swift */; };
 		2884CB9FFAB1BA0F7F038330D2C59258 /* pal2-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3D9368E9D224DE847931F774B9FAFA /* pal2-dummy.m */; };
 		2CBE3651CA006E19F5D64A2DE9B9A028 /* CachedResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDA57764A8E03532C6B4955E87CDD8F /* CachedResponseHandler.swift */; };
 		2CCD13099063CD560E3067BD132914FA /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1774BF767AC3195D750B0871A8FCDFD2 /* Notifications.swift */; };
@@ -106,6 +107,7 @@
 		2494FA0C9C5875FEE9D5F0BBC9793877 /* Pods-pal2_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-pal2_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		24C9C461A2E47CBAD2CF5F3C4DF69F5F /* Pods-pal2_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pal2_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		279623E1292525E5000B11E2 /* HttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HttpClient.swift; path = pal2/Classes/HttpClient.swift; sourceTree = "<group>"; };
+		279623E329253B60000B11E2 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		2A35AA383B0322648386EF285798BBD0 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
 		2F5F7A9EA97C3B9C660B1E7576FD43B3 /* Pods-pal2_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-pal2_Example.modulemap"; sourceTree = "<group>"; };
 		3423DDAB27DA675FAD3F4CEFD00A0087 /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLConvertible+URLRequestConvertible.swift"; path = "Source/URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
@@ -271,6 +273,7 @@
 		450AE75D1249A9F4BD9A6D3BB9016FFE /* models */ = {
 			isa = PBXGroup;
 			children = (
+				279623E329253B60000B11E2 /* Event.swift */,
 				B0851793391EED15DA880B71B43C3D26 /* Session.swift */,
 			);
 			name = models;
@@ -632,6 +635,7 @@
 				ED4E71B8DEEBF6CF46554E7CF8B798E1 /* PalPlugin.swift in Sources */,
 				266BF194C5870E5A51A7EDE4F425DBE8 /* Session.swift in Sources */,
 				279623E2292525E6000B11E2 /* HttpClient.swift in Sources */,
+				279623E429253B60000B11E2 /* Event.swift in Sources */,
 				3AD3C557260275AC19CC91C17A7EA5CD /* SessionApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

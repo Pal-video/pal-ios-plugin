@@ -27,8 +27,6 @@ class HttpClient: NSObject {
   
   func executeQuery<T>(data: [String: Any], headers: [String:String] = [:], endpoint: String, method: HTTPMethod = .post, isJSONRequest: Bool = true, completion: @escaping (Result<T, Error>) -> Void) where T: Codable {
     
-    
-    
     // add data
     var requestParameters = Parameters()
     data.forEach{requestParameters.updateValue($0.value, forKey: $0.key)}

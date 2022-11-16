@@ -16,6 +16,7 @@ public class PalPlugin {
   
   // Apis
   private var sessionApi: SessionApi?
+  private var eventApi: EventApi?
   
   public init() {}
   
@@ -31,17 +32,20 @@ public class PalPlugin {
     self.sessionApi = SessionApi(
       httpClient: httpClient
     )
+    self.eventApi = EventApi(
+      httpClient: httpClient
+    )
     self.sessionApi!.initSession()
   }
   
   public func logCurrentScreen(route: String) {
-    if (self.sessionApi == nil) {
+    if (!(self.sessionApi?.hasSession ?? false)) {
       // TODO: throw error
-      
+      debugPrint("⚠️ You need to have a session!")
       return
     }
     
-    
+    self.eventApi?.logCurrentScreen(session: self.sessionApi!.session, name: route)
   }
 }
 

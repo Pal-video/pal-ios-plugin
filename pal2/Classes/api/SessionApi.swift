@@ -7,8 +7,20 @@
 
 class SessionApi {
   private var httpClient: HttpClient
+  
   private var userDefaults = UserDefaults.standard
   private var palSession: PalSession?
+  
+  public var hasSession: Bool {
+    get {
+      return self.palSession != nil && !self.palSession!.uid.isEmpty
+    }
+  }
+  public var session: PalSession {
+    get {
+      return self.palSession!
+    }
+  }
   
   // Constants
   private var SessionId: String = "sessionId"
@@ -21,28 +33,26 @@ class SessionApi {
     let savedSessionId = userDefaults.string(forKey: SessionId)
     if (savedSessionId != nil && !savedSessionId!.isEmpty) {
       palSession = PalSession(uid: savedSessionId!)
-      //return;
+      debugPrint("Session restored!")
+      return;
     }
     
     let palSessionRequest = PalSessionRequest()
-    do {
-      let parameters = palSessionRequest.toMap()
-      
-      httpClient.executeQuery(data: parameters, endpoint: "/sessions") { (result: Result<PalSession, Error>) in
-        switch result{
-        case .success(let post):
-          print(post.uid)
-        case .failure(let error):
-          print(error)
-        }
+    let parameters = palSessionRequest.toMap()
+    httpClient.executeQuery(data: parameters, endpoint: "/sessions") { (result: Result<PalSession, Error>) in
+      switch result {
+      case .failure(let error):
+        debugPrint(error)
+      case .success(let palSession):
+        self.palSession = palSession
+        self.userDefaults.set(palSession.uid, forKey: self.SessionId)
+        self.userDefaults.synchronize()
       }
-      
-      
-      userDefaults.set("ID", forKey: SessionId)
-    } catch {
-      return;
     }
   }
   
-  
+  public func clearSession() {
+    userDefaults.removeObject(forKey: self.SessionId)
+    userDefaults.synchronize()
+  }
 }
