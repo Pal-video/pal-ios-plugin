@@ -24,24 +24,28 @@ class PalEvent {
   private let name: String
   private let type: PalEvents
   private let sessionUid: String
-  private let attributes: [String: Any?]?
+  private let attributes: [String: Any]?
   
-  public init(name: String, type: PalEvents, sessionUid: String, attributes: [String : Any?]?) {
+  public init(name: String, type: PalEvents, sessionUid: String, attributes: [String : Any]?) {
     self.name = name
     self.type = type
     self.sessionUid = sessionUid
     self.attributes = attributes
   }
   
-  public func toMap() -> [String: Any?] {
-    return ["sessionUId": self.sessionUid, "name": self.name, "type": self.type.description, "attrs": attributes]
+  public func toMap() -> [String: Any] {
+    var dict: [String : Any] = ["sessionUId": self.sessionUid, "name": self.name, "type": self.type.description]
+    if (attributes != nil) {
+      dict["attrs"] = attributes!
+    }
+    return dict
   }
 }
 
 class PalVideoTrigger: Codable {
   let eventLogId: String?
   let videoId: String?
-  let creationDate: Int
+  let creationDate: String
   let videoUrl: String?
   let videoThumbUrl: String?
   let imgThumbUrl: String?
@@ -49,7 +53,7 @@ class PalVideoTrigger: Codable {
   let videoSpeakerRole: String?
   let survey: Survey?
   
-  init(eventLogId: String?, videoId: String?, creationDate: Int, videoUrl: String?, videoThumbUrl: String?, imgThumbUrl: String?, videoSpeakerName: String?, videoSpeakerRole: String?, survey: Survey?) {
+  init(eventLogId: String?, videoId: String?, creationDate: String, videoUrl: String?, videoThumbUrl: String?, imgThumbUrl: String?, videoSpeakerName: String?, videoSpeakerRole: String?, survey: Survey?) {
     self.eventLogId = eventLogId
     self.videoId = videoId
     self.creationDate = creationDate
@@ -66,7 +70,7 @@ class PalVideoTrigger: Codable {
       return self.survey != nil
     }
   }
-
+  
   public var isTalkType: Bool {
     get {
       return self.survey == nil
@@ -76,11 +80,5 @@ class PalVideoTrigger: Codable {
 
 struct Survey: Codable {
   var question: String
-  // var options: ChoiceItem[]
-  // TODO: options
-}
-
-struct ChoiceItem: Codable {
-  var id: String
-  var text: String
+  var options: [String: String]
 }
