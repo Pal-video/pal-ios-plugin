@@ -29,7 +29,7 @@ class SessionApi {
     self.httpClient = httpClient
   }
   
-  public func initSession() {
+  public func initSession(completion: @escaping () -> Void) {
     let savedSessionId = userDefaults.string(forKey: SessionId)
     if (savedSessionId != nil && !savedSessionId!.isEmpty) {
       palSession = PalSession(uid: savedSessionId!)
@@ -47,6 +47,7 @@ class SessionApi {
         self.palSession = palSession
         self.userDefaults.set(palSession.uid, forKey: self.SessionId)
         self.userDefaults.synchronize()
+        completion()
       }
     }
   }

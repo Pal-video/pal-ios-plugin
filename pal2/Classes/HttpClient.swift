@@ -62,12 +62,12 @@ class HttpClient: NSObject {
             }
           default:
             let error = NSError(domain: response.debugDescription, code: code, userInfo: response.response?.allHeaderFields as? [String: Any])
-            debugPrint("❌ Error when sending Pal request \(String(describing: error.description))")
+            debugPrint("⛔️ Error when sending Pal request \(String(describing: error.description))")
             completion(.failure(error))
           }
         }
       case .failure(let error):
-        debugPrint("❌ Error when sending Pal request \(String(describing: error.errorDescription))")
+        debugPrint("⛔️ Error when sending Pal request \(String(describing: error.errorDescription))")
         completion(.failure(error))
       }
     })
