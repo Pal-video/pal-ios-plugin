@@ -19,6 +19,11 @@
 		27210775DC19F106177A4FE60434063B /* EventApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40EBBBA729BF777FE34EE0C786B71AD /* EventApi.swift */; };
 		279623E2292525E6000B11E2 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279623E1292525E5000B11E2 /* HttpClient.swift */; };
 		279623E429253B60000B11E2 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279623E329253B60000B11E2 /* Event.swift */; };
+		279623E6292632E7000B11E2 /* VideoTriggerEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279623E5292632E7000B11E2 /* VideoTriggerEvent.swift */; };
+		279623E829263653000B11E2 /* TriggeredEventApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279623E729263653000B11E2 /* TriggeredEventApi.swift */; };
+		279623EB2926474B000B11E2 /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279623EA2926474B000B11E2 /* Choice.swift */; };
+		279623EE29266CAD000B11E2 /* VideoBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279623ED29266CAC000B11E2 /* VideoBubble.swift */; };
+		279623F12926792F000B11E2 /* PalSdk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279623F02926792F000B11E2 /* PalSdk.swift */; };
 		2884CB9FFAB1BA0F7F038330D2C59258 /* pal2-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3D9368E9D224DE847931F774B9FAFA /* pal2-dummy.m */; };
 		2CBE3651CA006E19F5D64A2DE9B9A028 /* CachedResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDA57764A8E03532C6B4955E87CDD8F /* CachedResponseHandler.swift */; };
 		2CCD13099063CD560E3067BD132914FA /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1774BF767AC3195D750B0871A8FCDFD2 /* Notifications.swift */; };
@@ -108,6 +113,11 @@
 		24C9C461A2E47CBAD2CF5F3C4DF69F5F /* Pods-pal2_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pal2_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		279623E1292525E5000B11E2 /* HttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HttpClient.swift; path = pal2/Classes/HttpClient.swift; sourceTree = "<group>"; };
 		279623E329253B60000B11E2 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		279623E5292632E7000B11E2 /* VideoTriggerEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoTriggerEvent.swift; sourceTree = "<group>"; };
+		279623E729263653000B11E2 /* TriggeredEventApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriggeredEventApi.swift; sourceTree = "<group>"; };
+		279623EA2926474B000B11E2 /* Choice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Choice.swift; sourceTree = "<group>"; };
+		279623ED29266CAC000B11E2 /* VideoBubble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoBubble.swift; sourceTree = "<group>"; };
+		279623F02926792F000B11E2 /* PalSdk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PalSdk.swift; sourceTree = "<group>"; };
 		2A35AA383B0322648386EF285798BBD0 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
 		2F5F7A9EA97C3B9C660B1E7576FD43B3 /* Pods-pal2_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-pal2_Example.modulemap"; sourceTree = "<group>"; };
 		3423DDAB27DA675FAD3F4CEFD00A0087 /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLConvertible+URLRequestConvertible.swift"; path = "Source/URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
@@ -237,6 +247,32 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		279623E92926474B000B11E2 /* surveys */ = {
+			isa = PBXGroup;
+			children = (
+				279623EA2926474B000B11E2 /* Choice.swift */,
+			);
+			path = surveys;
+			sourceTree = "<group>";
+		};
+		279623EC29266CAC000B11E2 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				279623ED29266CAC000B11E2 /* VideoBubble.swift */,
+			);
+			name = view;
+			path = pal2/Classes/view;
+			sourceTree = "<group>";
+		};
+		279623EF2926792F000B11E2 /* sdk */ = {
+			isa = PBXGroup;
+			children = (
+				279623F02926792F000B11E2 /* PalSdk.swift */,
+			);
+			name = sdk;
+			path = pal2/Classes/sdk;
+			sourceTree = "<group>";
+		};
 		2822B6578E8E6B0476C405C2A63F418D /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -265,6 +301,7 @@
 			children = (
 				E40EBBBA729BF777FE34EE0C786B71AD /* EventApi.swift */,
 				56FE0B82F90310EA82D3486C23538DE9 /* SessionApi.swift */,
+				279623E729263653000B11E2 /* TriggeredEventApi.swift */,
 			);
 			name = api;
 			path = pal2/Classes/api;
@@ -273,7 +310,9 @@
 		450AE75D1249A9F4BD9A6D3BB9016FFE /* models */ = {
 			isa = PBXGroup;
 			children = (
+				279623E92926474B000B11E2 /* surveys */,
 				279623E329253B60000B11E2 /* Event.swift */,
+				279623E5292632E7000B11E2 /* VideoTriggerEvent.swift */,
 				B0851793391EED15DA880B71B43C3D26 /* Session.swift */,
 			);
 			name = models;
@@ -385,8 +424,10 @@
 		C86BAA3B06F845F14570D3A6F21EEA2D /* pal2 */ = {
 			isa = PBXGroup;
 			children = (
+				279623EF2926792F000B11E2 /* sdk */,
 				51848B35A69F80B232014024B7461997 /* PalPlugin.swift */,
 				279623E1292525E5000B11E2 /* HttpClient.swift */,
+				279623EC29266CAC000B11E2 /* view */,
 				391F645346855390506C064681559F5B /* api */,
 				450AE75D1249A9F4BD9A6D3BB9016FFE /* models */,
 				FB71472B659F7DF5DE2133452960241B /* Pod */,
@@ -632,11 +673,16 @@
 			files = (
 				27210775DC19F106177A4FE60434063B /* EventApi.swift in Sources */,
 				2884CB9FFAB1BA0F7F038330D2C59258 /* pal2-dummy.m in Sources */,
+				279623F12926792F000B11E2 /* PalSdk.swift in Sources */,
 				ED4E71B8DEEBF6CF46554E7CF8B798E1 /* PalPlugin.swift in Sources */,
 				266BF194C5870E5A51A7EDE4F425DBE8 /* Session.swift in Sources */,
+				279623EE29266CAD000B11E2 /* VideoBubble.swift in Sources */,
 				279623E2292525E6000B11E2 /* HttpClient.swift in Sources */,
 				279623E429253B60000B11E2 /* Event.swift in Sources */,
+				279623EB2926474B000B11E2 /* Choice.swift in Sources */,
 				3AD3C557260275AC19CC91C17A7EA5CD /* SessionApi.swift in Sources */,
+				279623E829263653000B11E2 /* TriggeredEventApi.swift in Sources */,
+				279623E6292632E7000B11E2 /* VideoTriggerEvent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
