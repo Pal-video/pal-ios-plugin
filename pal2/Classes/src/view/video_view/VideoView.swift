@@ -47,7 +47,7 @@ class VideoView: UIView {
   }
   
   private func stopPlayer() {
-    player.seek(to: kCMTimeZero)
+    player.seek(to: CMTime.zero)
     player.pause()
   }
   

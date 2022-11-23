@@ -178,7 +178,7 @@
 		4A83CD03CEE74DFB7E940901765AEF79 /* PalPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PalPlugin.swift; path = pal2/Classes/src/PalPlugin.swift; sourceTree = "<group>"; };
 		4A940AA9F98BE1E5C58C7C9778DF0C6B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4C27AFC3D4E3C880B515D34754CBED49 /* RedirectHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RedirectHandler.swift; path = Source/RedirectHandler.swift; sourceTree = "<group>"; };
-		52A6011654EE4031C384B7C427BBB9E6 /* pal2 */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = pal2; path = pal2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52A6011654EE4031C384B7C427BBB9E6 /* pal2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = pal2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		54331A78B6124538B40BC63B02FA5DBF /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
 		5479220CD8236B9C2B589D8313A118BE /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
 		5B3DB4AB49B3EC1771F68B643BA0994A /* VideoView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
@@ -244,7 +244,7 @@
 		E89CD12371068993EA979E536935571D /* CachedResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CachedResponseHandler.swift; path = Source/CachedResponseHandler.swift; sourceTree = "<group>"; };
 		E918A5BC5C1C9A61990BF92296670BF1 /* Pods-pal2_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pal2_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E927094BAB34585128989AF746E69B66 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
-		EAF4AA8F2D2A3B16852B86C1853402CA /* pal2.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = pal2.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		EAF4AA8F2D2A3B16852B86C1853402CA /* pal2.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = pal2.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		F04D9C679FFC5D08FA73B725E953EF02 /* Result+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Result+Alamofire.swift"; path = "Source/Result+Alamofire.swift"; sourceTree = "<group>"; };
 		F2D46BFC9C6F1039212690AE1AF571F1 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
 		F4BB4AC5EFC219CDA4253E025084A959 /* Pods-pal2_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-pal2_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -460,7 +460,7 @@
 			isa = PBXGroup;
 			children = (
 				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */,
-				52A6011654EE4031C384B7C427BBB9E6 /* pal2 */,
+				52A6011654EE4031C384B7C427BBB9E6 /* pal2.framework */,
 				2FA7D0FEA9301A7E1BA71AA41C485DEB /* pal2.bundle */,
 				B2DBB1BCD6358F14CE83AD2479F6B5A5 /* Pods-pal2_Example */,
 				7E882C01BC0000761AC6BAB43B7695F4 /* Pods-pal2_Tests */,
@@ -789,7 +789,7 @@
 			);
 			name = pal2;
 			productName = pal2;
-			productReference = 52A6011654EE4031C384B7C427BBB9E6 /* pal2 */;
+			productReference = 52A6011654EE4031C384B7C427BBB9E6 /* pal2.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -1072,7 +1072,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1103,7 +1103,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
