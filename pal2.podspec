@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'pal2'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of pal2.'
+  s.version          = '1.0.0'
+  s.summary          = 'Your in-app friend that creates a real link with your users.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  Your in-app friend that creates a real link with your users.
                        DESC
 
   s.homepage         = 'https://github.com/istornz/pal2'
@@ -34,7 +34,7 @@ TODO: Add long description of the pod here.
   
   s.resources = "pal2/**/*.{ttf}"
   s.resource_bundles = {
-    'pal2' => ['{podName}/Classes/view/*.xib', '{podName}/Assets/assets/fonts/*.ttf', '{podName}/Assets/images/*.png']
+    'pal2' => ['pal2/Classes/src/view/video_view/*.xib', 'pal2/Assets/assets/fonts/*.ttf', 'pal2/Assets/assets/images/*.png']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
