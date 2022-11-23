@@ -10,20 +10,20 @@ import Foundation
 extension UIFont {
   private static func registerFont(withName name: String, fileExtension: String) {
     let frameworkBundle = Bundle(for: PalPlugin.self)
-    let pathForResourceString = frameworkBundle.path(forResource: name, ofType: fileExtension)
-    let fontData = NSData(contentsOfFile: pathForResourceString!)
-    let dataProvider = CGDataProvider(data: fontData!)
-    let fontRef = CGFont(dataProvider!)
+    guard let pathForResourceString = frameworkBundle.path(forResource: "\(name)\(fileExtension)", ofType: nil),
+             let fontData = NSData(contentsOfFile: pathForResourceString),
+             let dataProvider = CGDataProvider(data: fontData)
+    else { return }
+    
+    guard let fontRef = CGFont(dataProvider) else { return }
     var errorRef: Unmanaged<CFError>? = nil
     
-    if (CTFontManagerRegisterGraphicsFont(fontRef!, &errorRef) == false) {
-      print("Error registering font")
+    if (CTFontManagerRegisterGraphicsFont(fontRef, &errorRef) == false) {
+      debugPrint("Failed to register font - register graphics font failed - this font may have already been registered in the main bundle.")
     }
   }
   
   public static func loadFonts() {
-    registerFont(withName: "Nunito", fileExtension: "ttf")
-    registerFont(withName: "NunitoBold", fileExtension: "ttf")
     registerFont(withName: "Inter-Regular", fileExtension: "ttf")
     registerFont(withName: "Inter-Bold", fileExtension: "ttf")
   }

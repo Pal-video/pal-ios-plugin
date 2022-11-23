@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'pal2'
-  s.version          = '1.0.3'
+  s.version          = '1.0.4'
   s.summary          = 'Your in-app friend that creates a real link with your users.'
   s.swift_version    = '5.7'
 
@@ -35,7 +35,7 @@ Pod::Spec.new do |s|
   
   s.resources = "pal2/**/*.{ttf}"
   s.resource_bundles = {
-    'pal2' => ['pal2/Classes/src/view/video_view/*.xib', 'pal2/Assets/assets/fonts/*.ttf', 'pal2/Assets/assets/images/*.png']
+    'pal2' => ['pal2/Classes/src/view/video_view/*.xib', 'pal2/Assets/fonts/Inter-Bold.ttf', 'pal2/Assets/fonts/Inter-Regular.ttf', 'pal2/Assets/Media.xcassets']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'

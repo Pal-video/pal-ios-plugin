@@ -20,13 +20,7 @@
 		1CA5DDFC2DF907B77355DC0CF211B2BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CBE00646A514365F86456896C595115 /* Foundation.framework */; };
 		1EE44196E7BCE57AD96A2C751651EF40 /* AlamofireExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F3543B8E5E5BF8E4A2DF7BCBC070D3 /* AlamofireExtended.swift */; };
 		22DC75E15E19C04131FC796220F4B6B1 /* Pods-pal2_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F1CAADAD824A5750AC10C6DEDF4883 /* Pods-pal2_Tests-dummy.m */; };
-		277BDDD6292E1B52001DCBEB /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 277BDDCE292E1B52001DCBEB /* logo.png */; };
-		277BDDD7292E1B52001DCBEB /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 277BDDD0292E1B52001DCBEB /* Inter-Bold.ttf */; };
-		277BDDD8292E1B52001DCBEB /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 277BDDD1292E1B52001DCBEB /* Inter-Regular.ttf */; };
-		277BDDD9292E1B52001DCBEB /* Nunito.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 277BDDD2292E1B52001DCBEB /* Nunito.ttf */; };
-		277BDDDA292E1B52001DCBEB /* Inter.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 277BDDD3292E1B52001DCBEB /* Inter.ttf */; };
-		277BDDDB292E1B52001DCBEB /* NunitoBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 277BDDD4292E1B52001DCBEB /* NunitoBold.ttf */; };
-		277BDDDC292E1B52001DCBEB /* InterBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 277BDDD5292E1B52001DCBEB /* InterBold.ttf */; };
+		277BDE00292E854B001DCBEB /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 277BDDFF292E854B001DCBEB /* Media.xcassets */; };
 		2863D9B3B4DA5C454B553BDC72B99967 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77007E46140B43E74CAE4D1EA2A19E0 /* Session.swift */; };
 		2CBE3651CA006E19F5D64A2DE9B9A028 /* CachedResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89CD12371068993EA979E536935571D /* CachedResponseHandler.swift */; };
 		2CCD13099063CD560E3067BD132914FA /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEF7F3EE581A4605E733E967DA04765 /* Notifications.swift */; };
@@ -155,13 +149,7 @@
 		2248F6749138947D2EC421E9A4FDE8E3 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
 		2494FA0C9C5875FEE9D5F0BBC9793877 /* Pods-pal2_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-pal2_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		24C9C461A2E47CBAD2CF5F3C4DF69F5F /* Pods-pal2_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pal2_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		277BDDCE292E1B52001DCBEB /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
-		277BDDD0292E1B52001DCBEB /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
-		277BDDD1292E1B52001DCBEB /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
-		277BDDD2292E1B52001DCBEB /* Nunito.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Nunito.ttf; sourceTree = "<group>"; };
-		277BDDD3292E1B52001DCBEB /* Inter.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Inter.ttf; sourceTree = "<group>"; };
-		277BDDD4292E1B52001DCBEB /* NunitoBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NunitoBold.ttf; sourceTree = "<group>"; };
-		277BDDD5292E1B52001DCBEB /* InterBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = InterBold.ttf; sourceTree = "<group>"; };
+		277BDDFF292E854B001DCBEB /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = pal2/Assets/Media.xcassets; sourceTree = "<group>"; };
 		2A90BB91F62351F32513B83DAF5C35B6 /* RequestTaskMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestTaskMap.swift; path = Source/RequestTaskMap.swift; sourceTree = "<group>"; };
 		2D54243A63F32339A17905590BBEFE8C /* Concurrency.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Concurrency.swift; path = Source/Concurrency.swift; sourceTree = "<group>"; };
 		2F5F7A9EA97C3B9C660B1E7576FD43B3 /* Pods-pal2_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-pal2_Example.modulemap"; sourceTree = "<group>"; };
@@ -328,37 +316,6 @@
 				C9700FE8F855BCFE1A06276B4C17391B /* VideoView.xib */,
 			);
 			path = video_view;
-			sourceTree = "<group>";
-		};
-		277BDDCC292E1B52001DCBEB /* assets */ = {
-			isa = PBXGroup;
-			children = (
-				277BDDCD292E1B52001DCBEB /* images */,
-				277BDDCF292E1B52001DCBEB /* fonts */,
-			);
-			name = assets;
-			path = pal2/Assets/assets;
-			sourceTree = "<group>";
-		};
-		277BDDCD292E1B52001DCBEB /* images */ = {
-			isa = PBXGroup;
-			children = (
-				277BDDCE292E1B52001DCBEB /* logo.png */,
-			);
-			path = images;
-			sourceTree = "<group>";
-		};
-		277BDDCF292E1B52001DCBEB /* fonts */ = {
-			isa = PBXGroup;
-			children = (
-				277BDDD0292E1B52001DCBEB /* Inter-Bold.ttf */,
-				277BDDD1292E1B52001DCBEB /* Inter-Regular.ttf */,
-				277BDDD2292E1B52001DCBEB /* Nunito.ttf */,
-				277BDDD3292E1B52001DCBEB /* Inter.ttf */,
-				277BDDD4292E1B52001DCBEB /* NunitoBold.ttf */,
-				277BDDD5292E1B52001DCBEB /* InterBold.ttf */,
-			);
-			path = fonts;
 			sourceTree = "<group>";
 		};
 		34AEB354436AD2A0C051F1EA43D0AAFD /* surveys */ = {
@@ -540,7 +497,7 @@
 		C5D18364F28DC1DA873144DB042C6BA5 /* pal2 */ = {
 			isa = PBXGroup;
 			children = (
-				277BDDCC292E1B52001DCBEB /* assets */,
+				277BDDFF292E854B001DCBEB /* Media.xcassets */,
 				625D3A8D051DC88B3C4959EF603C251C /* HttpClient.swift */,
 				4A83CD03CEE74DFB7E940901765AEF79 /* PalPlugin.swift */,
 				CF3F06B265E9BFCA9BB1C4B206F05CD5 /* PalSdk.swift */,
@@ -841,13 +798,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				277BDDD7292E1B52001DCBEB /* Inter-Bold.ttf in Resources */,
-				277BDDDB292E1B52001DCBEB /* NunitoBold.ttf in Resources */,
-				277BDDD6292E1B52001DCBEB /* logo.png in Resources */,
-				277BDDD9292E1B52001DCBEB /* Nunito.ttf in Resources */,
-				277BDDDC292E1B52001DCBEB /* InterBold.ttf in Resources */,
-				277BDDDA292E1B52001DCBEB /* Inter.ttf in Resources */,
-				277BDDD8292E1B52001DCBEB /* Inter-Regular.ttf in Resources */,
+				277BDE00292E854B001DCBEB /* Media.xcassets in Resources */,
 				E4A291E856A005B3BFC5AD7B19D968D8 /* pal2.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
