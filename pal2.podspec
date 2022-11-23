@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'pal2'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'Your in-app friend that creates a real link with your users.'
 
 # This description is used to generate tags and improve search results.
@@ -21,14 +21,14 @@ Pod::Spec.new do |s|
   Your in-app friend that creates a real link with your users.
                        DESC
 
-  s.homepage         = 'https://pal.video/'
+  s.homepage         = 'https://github.com/Pal-video/pal-ios-plugin'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'istornz' => 'iphoneretro@icloud.com' }
   s.source           = { :git => 'https://github.com/Pal-video/pal-ios-plugin.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '11.0'
 
   s.source_files = 'pal2/Classes/**/*'
   
