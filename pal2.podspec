@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
   Your in-app friend that creates a real link with your users.
                        DESC
 
-  s.homepage         = 'https://github.com/istornz/pal2'
+  s.homepage         = 'https://pal.video/'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'istornz' => 'd.dessus@apparence.io' }
-  s.source           = { :git => 'https://github.com/istornz/pal2.git', :tag => s.version.to_s }
+  s.author           = { 'istornz' => 'iphoneretro@icloud.com' }
+  s.source           = { :git => 'https://github.com/Pal-video/pal-ios-plugin.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
