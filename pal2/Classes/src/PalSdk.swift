@@ -46,6 +46,10 @@ class PalSdk {
     var bottomSafeAreaHeight: CGFloat = 0
     
     if #available(iOS 11.0, *) {
+      let windows = UIApplication.shared.windows
+      if (windows.isEmpty) {
+        return;
+      }
       let window = UIApplication.shared.windows[0]
       let safeFrame = window.safeAreaLayoutGuide.layoutFrame
       bottomSafeAreaHeight = window.frame.maxY - safeFrame.maxY
