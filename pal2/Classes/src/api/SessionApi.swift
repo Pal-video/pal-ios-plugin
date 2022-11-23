@@ -5,6 +5,10 @@
 //  Created by Dimitri Dessus on 16/11/2022.
 //
 
+struct SessionApiConstants {
+  static let SessionId = "sessionId"
+}
+
 class SessionApi {
   private var httpClient: HttpClient
   
@@ -20,17 +24,17 @@ class SessionApi {
     get {
       return self.palSession!
     }
+    set {
+      
+    }
   }
-  
-  // Constants
-  private var SessionId: String = "sessionId"
   
   public init(httpClient: HttpClient) {
     self.httpClient = httpClient
   }
   
   public func initSession(completion: @escaping () -> Void) {
-    let savedSessionId = userDefaults.string(forKey: SessionId)
+    let savedSessionId = userDefaults.string(forKey: SessionApiConstants.SessionId)
     if (savedSessionId != nil && !savedSessionId!.isEmpty) {
       palSession = PalSession(uid: savedSessionId!)
       debugPrint("Session restored!")
@@ -45,7 +49,7 @@ class SessionApi {
         debugPrint(error)
       case .success(let palSession):
         self.palSession = palSession
-        self.userDefaults.set(palSession.uid, forKey: self.SessionId)
+        self.userDefaults.set(palSession.uid, forKey: SessionApiConstants.SessionId)
         self.userDefaults.synchronize()
         completion()
       }
@@ -53,7 +57,7 @@ class SessionApi {
   }
   
   public func clearSession() {
-    userDefaults.removeObject(forKey: self.SessionId)
+    userDefaults.removeObject(forKey: SessionApiConstants.SessionId)
     userDefaults.synchronize()
   }
 }

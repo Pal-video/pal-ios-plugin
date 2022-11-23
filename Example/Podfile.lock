@@ -2,6 +2,8 @@ PODS:
   - Alamofire (5.6.2)
   - pal2 (0.1.0):
     - Alamofire
+    - Pulsator
+  - Pulsator (0.6.0)
 
 DEPENDENCIES:
   - pal2 (from `../`)
@@ -9,6 +11,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - Pulsator
 
 EXTERNAL SOURCES:
   pal2:
@@ -16,7 +19,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
-  pal2: 4785e9352bc1dbb49d7f01e56cdfd6d9ae363b43
+  pal2: f6a445ddc3a74c3d5fe0370d79e8f9a17d8fb9ff
+  Pulsator: eb5a9f9be4bdcbd19903984c65deca6aabe50a17
 
 PODFILE CHECKSUM: 4f9467e593f31b3236330eb7813d277eadd31359
 

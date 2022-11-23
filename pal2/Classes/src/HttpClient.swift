@@ -49,15 +49,13 @@ class HttpClient: NSObject {
           switch code {
           case 200...299:
             do {
-              let body = try JSONDecoder().decode(T.self, from: res)
-              
               debugPrint("✅ Pal request sent successfully")
               debugPrint("🔐 Code: \(code)")
+              let body = try JSONDecoder().decode(T.self, from: res.isEmpty ? "{}".data(using: .utf8)! : res)
               debugPrint("🔐 Data: \(body)")
-              
               completion(.success(body))
             } catch let error {
-              debugPrint(" Error when sending Pal request \(String(data: res, encoding: .utf8) ?? "nothing received")")
+              debugPrint("⛔️ Error when sending Pal request \(String(data: res, encoding: .utf8) ?? "nothing received")")
               completion(.failure(error))
             }
           default:

@@ -7,6 +7,11 @@
 
 import Foundation
 
+struct PalSessionRequestConstants {
+  static let FrameworkType = "SWIFT"
+  static let Platform = "iOS"
+}
+
 struct PalSession: Codable {
   let uid: String
 }
@@ -16,8 +21,8 @@ class PalSessionRequest: Codable {
   private var platform: String
   
   public init() {
-    self.frameworkType = "SWIFT"
-    self.platform = "iOS" // TODO: add dynamic macos, ios, ...
+    self.frameworkType = PalSessionRequestConstants.FrameworkType
+    self.platform = PalSessionRequestConstants.Platform // TODO: add dynamic macos, ios, ...
   }
   
   public func toMap() -> [String: Any] {

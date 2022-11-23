@@ -39,9 +39,8 @@ class PalTriggeredEventApi {
     }
     
     self.resultEvents.forEach() {item in
-      // FIXME: String? not sure
       item.value.forEach { event in
-        httpClient.executeQuery(data: event.toMap(), endpoint: "/eventlogs/\(item.key)") { (result: Result<String?, Error>) in
+        httpClient.executeQuery(data: event.toMap(), endpoint: "/eventlogs/\(item.key)") { (result: Result<[String: String]?, Error>) in
           switch result {
           case .failure(let error):
             debugPrint("⛔️ Event \(item.key) not sent! (\(error)")

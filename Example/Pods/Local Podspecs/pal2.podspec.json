@@ -19,13 +19,25 @@
     "ios": "10.0"
   },
   "source_files": "pal2/Classes/**/*",
+  "resources": "pal2/**/*.{ttf}",
   "resource_bundles": {
     "pal2": [
-      "{podName}/Classes/view/*.xib"
+      "{podName}/Classes/view/*.xib",
+      "{podName}/Assets/fonts/*.ttf",
+      "{podName}/Assets/images/*.png"
     ]
   },
   "dependencies": {
     "Alamofire": [
+
+    ],
+    "Pulsator": [
+
+    ],
+    "GoogleFontsiOS/Inter": [
+
+    ],
+    "GoogleFontsiOS/Nunito": [
 
     ]
   }

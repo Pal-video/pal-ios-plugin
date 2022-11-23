@@ -32,11 +32,13 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'pal2/Classes/**/*'
   
+  s.resources = "pal2/**/*.{ttf}"
   s.resource_bundles = {
-    'pal2' => ['{podName}/Classes/view/*.xib']
+    'pal2' => ['{podName}/Classes/view/*.xib', '{podName}/Assets/assets/fonts/*.ttf', '{podName}/Assets/images/*.png']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'Alamofire'
+  s.dependency 'Pulsator'
 end

@@ -15,7 +15,10 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
     
-    PalPlugin.sharedInstance.logCurrentScreen(controller: self, route: "/first")
+    PalPlugin.sharedInstance.clearSession {
+      PalPlugin.sharedInstance.logCurrentScreen(controller: self, route: "/first")
+    }
+    
   }
   
   override func didReceiveMemoryWarning() {

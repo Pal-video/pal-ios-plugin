@@ -50,10 +50,6 @@ class VideoTriggerEvent {
   }
   
   public func toMap() -> [String: Any] {
-    var dict: [String : Any] = ["time": self.time.timeIntervalSince1970, "type": self.type.description, "sessionId": self.sessionId]
-    if (args != nil) {
-      dict["attrs"] = args!
-    }
-    return dict
+    return ["time": Date.ISOStringFromDate(date: self.time), "type": self.type.description, "sessionId": self.sessionId, "attrs": args != nil ? args! : ""]
   }
 }
