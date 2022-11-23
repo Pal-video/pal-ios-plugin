@@ -23,7 +23,7 @@
   "resource_bundles": {
     "pal2": [
       "{podName}/Classes/view/*.xib",
-      "{podName}/Assets/fonts/*.ttf",
+      "{podName}/Assets/assets/fonts/*.ttf",
       "{podName}/Assets/images/*.png"
     ]
   },
@@ -32,12 +32,6 @@
 
     ],
     "Pulsator": [
-
-    ],
-    "GoogleFontsiOS/Inter": [
-
-    ],
-    "GoogleFontsiOS/Nunito": [
 
     ]
   }
