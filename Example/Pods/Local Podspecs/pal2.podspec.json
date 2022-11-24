@@ -1,30 +1,34 @@
 {
   "name": "pal2",
-  "version": "0.1.0",
-  "summary": "A short description of pal2.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/istornz/pal2",
+  "version": "1.0.4",
+  "summary": "Your in-app friend that creates a real link with your users.",
+  "swift_versions": "5.7",
+  "description": "Your in-app friend that creates a real link with your users.",
+  "homepage": "https://github.com/Pal-video/pal-ios-plugin",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "istornz": "d.dessus@apparence.io"
+    "istornz": "iphoneretro@icloud.com"
   },
   "source": {
-    "git": "https://github.com/istornz/pal2.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/Pal-video/pal-ios-plugin.git",
+    "tag": "1.0.4"
   },
   "platforms": {
-    "ios": "10.0"
+    "ios": "11.0"
   },
-  "source_files": "pal2/Classes/**/*",
-  "resources": "pal2/**/*.{ttf}",
+  "source_files": [
+    "pal2/Classes/**/*",
+    "pal2/Assets/fonts/*.{ttf}",
+    "pal2/Assets/Media.xcassets"
+  ],
   "resource_bundles": {
-    "pal2": [
-      "{podName}/Classes/view/*.xib",
-      "{podName}/Assets/assets/fonts/*.ttf",
-      "{podName}/Assets/images/*.png"
+    "Pal2Ressources": [
+      "pal2/Assets/fonts/Inter-Bold.ttf",
+      "pal2/Assets/fonts/Inter-Regular.ttf",
+      "pal2/Assets/Media.xcassets"
     ]
   },
   "dependencies": {
@@ -34,5 +38,6 @@
     "Pulsator": [
 
     ]
-  }
+  },
+  "swift_version": "5.7"
 }

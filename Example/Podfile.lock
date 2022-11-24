@@ -1,6 +1,6 @@
 PODS:
   - Alamofire (5.6.2)
-  - pal2 (0.1.0):
+  - pal2 (1.0.4):
     - Alamofire
     - Pulsator
   - Pulsator (0.6.0)
@@ -19,7 +19,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
-  pal2: d3b27f1803820aded2e14e5da31da6962db0037c
+  pal2: 65d809810e21e6a3ae3628f11c3ec433a576f405
   Pulsator: eb5a9f9be4bdcbd19903984c65deca6aabe50a17
 
 PODFILE CHECKSUM: 4f9467e593f31b3236330eb7813d277eadd31359

@@ -78,6 +78,15 @@ class VideoView: UIView {
     
     let tap = UITapGestureRecognizer(target: self, action: #selector(self.onBottomBannerTap(_:)))
     bottomBanner.addGestureRecognizer(tap)
+    
+    let frameworkBundle = Bundle(for: PalPlugin.self)
+    guard let resourcePath = frameworkBundle.path(forResource: "Pal2Ressources", ofType:"bundle"),
+          let resourceBundle = Bundle(path: resourcePath)
+    else {
+      return
+    }
+    
+    palLogo.image = UIImage(named: "logo", in: resourceBundle, compatibleWith: nil)
   }
   
   override func layoutSubviews() {
