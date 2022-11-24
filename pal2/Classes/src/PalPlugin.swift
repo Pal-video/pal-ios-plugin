@@ -58,7 +58,7 @@ public class PalPlugin {
   /// depending on configuration
   /// - user will see video on first time this screen as been seen
   /// Or each time this screen is visited
-  public func logCurrentScreen(controller: UIViewController, route: String, completion: (() -> Void)? = nil) {
+  public func logCurrentScreen(view: UIView, route: String, completion: (() -> Void)? = nil) {
     self.palVideoTrigger = nil
     
     if (!(self.sessionApi?.hasSession ?? false)) {
@@ -75,7 +75,7 @@ public class PalPlugin {
       
       if (self.palVideoTrigger!.isTalkType) {
         debugPrint("🔹 Talk video found!")
-        self.showVideo(controller: controller, trigger: palVideoTrigger!)
+        self.showVideo(view: view, trigger: palVideoTrigger!)
       } else if (self.palVideoTrigger!.isSurveyType) {
         debugPrint("🔹 Survey video found! but not available on iOS for now!")
         // TODO:
@@ -115,8 +115,8 @@ public class PalPlugin {
     self.sessionApi!.session = PalSession(uid: sessionId)
   }
   
-  private func showVideo(controller: UIViewController, trigger: PalVideoTrigger) {
-    palSdk.showVideoOnly(view: controller.view, videoAsset: trigger.videoUrl!, videoThumbUrl: trigger.videoThumbUrl!, userName: trigger.videoSpeakerName!, companyTitle: trigger.videoSpeakerRole!, onVideoEnd: {
+  private func showVideo(view: UIView, trigger: PalVideoTrigger) {
+    palSdk.showVideoOnly(view: view, videoAsset: trigger.videoUrl!, videoThumbUrl: trigger.videoThumbUrl!, userName: trigger.videoSpeakerName!, companyTitle: trigger.videoSpeakerRole!, onVideoEnd: {
       self.onVideoViewed(trigger: trigger)
     }, onSkip: {
       self.onVideoSkipped(trigger: trigger)

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'pal2'
-  s.version          = '1.0.5'
+  s.version          = '1.0.6'
   s.summary          = 'Your in-app friend that creates a real link with your users.'
   s.swift_version    = '5.7'
 

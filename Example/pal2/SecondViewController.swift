@@ -15,7 +15,7 @@ class SecondViewController: UIViewController {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
     
-    PalPlugin.sharedInstance.logCurrentScreen(controller: self, route: "/second")
+    PalPlugin.sharedInstance.logCurrentScreen(view: self.view, route: "/second")
   }
   
   override func didReceiveMemoryWarning() {
